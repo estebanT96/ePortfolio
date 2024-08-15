@@ -4,7 +4,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #fff0e5;
 }
 
 h1,
@@ -50,6 +49,13 @@ li {
   color: #3a10e5;
 }
 
+.container {
+  padding: 50px 0;
+}
+
+.section__title {
+  margin-bottom: 20px;
+}
 /* NAVIGATION BAR*/
 
 nav {
@@ -100,6 +106,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fff0e5;
 }
 
 .about-me__info {
@@ -160,4 +167,58 @@ nav {
 
 .about-me__img {
   width: 100%;
+}
+
+/* LANGUAGES */
+
+#languages {
+  background-color: #f7e3d5;
+}
+
+.language__list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.language__img--wrapper {
+  text-align: center;
+  width: 25%;
+}
+
+.fa-brands:hover {
+  filter: brightness(80%);
+  opacity: 0.89;
+  transform: scale(1.2);
+  transition: all 300ms ease;
+}
+
+.fa-html5 {
+  color: rgb(255, 0, 0);
+  font-size: 60px;
+  padding: 0 12px;
+}
+
+.fa-css3-alt {
+  color: rgb(13, 102, 219);
+  font-size: 60px;
+  padding: 0 12px;
+}
+
+.fa-js {
+  color: rgb(209, 209, 17);
+  font-size: 60px;
+  padding: 0 12px;
+}
+
+.fa-react {
+  color: rgb(0, 119, 255);
+  font-size: 60px;
+  padding: 0 12px;
 }
