@@ -18,6 +18,10 @@ span {
   line-height: 1.5;
 }
 
+h1 {
+  font-size: 36px;
+}
+
 p {
   line-height: 1.5;
   font-size: 16px;
@@ -27,11 +31,37 @@ li {
   list-style-type: none;
 }
 
+.row {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 50px 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+section:nth-child(even) {
+  background-color: #fff0e5;
+}
+
+.section__title {
+  margin-bottom: 20px;
+}
+
 /* NAVIGATION BAR*/
 
 nav {
   height: 100px;
-  width: 100%;  
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
@@ -41,14 +71,13 @@ nav {
 
 .personal__logo {
   font-size: 24px;
-  color:#6030b1;
+  color: #6030b1;
   font-weight: bold;
   margin: 0 12px;
 }
 
 .nav__link--list {
   display: flex;
-
 }
 
 .nav__link--anchor {
@@ -68,4 +97,157 @@ nav {
 
 .nav__link--anchor-primary:hover {
   background-color: #5d3eff;
+}
+
+/* ABOUT ME*/
+
+#about-me {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me__info {
+  display: flex;
+}
+
+.about-me__info--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.about-me__picture--mask {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  margin-bottom: 28px;
+}
+
+.about-me__picture {
+  width: 100%;
+  transform: scale(2.8);
+  padding-top: 32px;
+  padding-left: 30px;
+}
+
+.about-me__info--title {
+  margin-bottom: 16px;
+}
+
+.about-me__info--para {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 28px;
+}
+
+.about-me__links {
+  margin-bottom: 16px;
+}
+
+.about-me__link {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  padding: 0 16px;
+}
+
+.blue-text {
+  color: #5d3eff;
+}
+
+.fa-leaf {
+  color: green;
+}
+
+.about-me__img--container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.about-me__img {
+  width: 100%;
+}
+
+/* LANGUAGES*/
+
+.language__list {
+  display: flex;
+  width: 100%;
+}
+
+.language {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.language__img--wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.language__img {
+  width: 100%;
+  max-width: 100px;
+  transition: all 300ms ease;
+}
+
+.language:hover .language__img {
+  transform: scale(0.9);
+  opacity: 70%;
+}
+
+.language__name {
+  font-weight: 700;
+  transform: scale(0);
+  transition: all 300ms ease;
+}
+
+.language:hover .language__name {
+  transform: scale(1);
+}
+
+/* COMPANIES */
+
+.company__logos {
+  display: flex;
+  align-items: center;
+}
+
+.company {
+  width: 25%;
+}
+
+.company__img--wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.company__img {
+  width: 100%;
+  max-width: 150px;
+}
+
+.unison {
+  transform: scale(.9);
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.company__name {
+  font-weight: 700;
 }
