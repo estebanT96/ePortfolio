@@ -218,36 +218,42 @@ nav {
 
 /* COMPANIES */
 
-.company__logos {
-  display: flex;
-  align-items: center;
-}
-
-.company {
-  width: 25%;
-}
-
-.company__img--wrapper {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.company__img {
-  width: 100%;
-  max-width: 150px;
-}
-
-.unison {
-  transform: scale(.9);
-}
-
-.company {
+.company__list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  border: 4px solid black;
+  width: 100%;
+  max-height: 800px;
+  height: 100%;
 }
 
-.company__name {
-  font-weight: 700;
+.company__info--wrapper {
+  border: 2px solid red;
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 200px;
+}
+
+.company__logo--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid blue;
+  width: 30%;
+  height: 100%;
+}
+
+.company__logo {
+ width: 100%;
+}
+
+.company__info-text--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid blue;
+  width: 70%;
+  height: 100%;
 }
