@@ -169,10 +169,11 @@ nav {
   flex: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .about-me__img {
-  width: 100%;
+  width: 80%;
 }
 
 /* LANGUAGES*/
@@ -221,39 +222,38 @@ nav {
 .company__list {
   display: flex;
   flex-direction: column;
-  border: 4px solid black;
+  justify-content: space-between;
   width: 100%;
   max-height: 800px;
   height: 100%;
 }
 
 .company__info--wrapper {
-  border: 2px solid red;
-  display: flex;  
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  min-height: 200px;
+  border-bottom: 2px solid hsla(0, 2%, 31%, 0.199);
+  border-radius: 5px;
+  margin: 4px;
+  min-height: 160px;
+  max-height: 160px;
+  display: flex;
 }
 
 .company__logo--wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid blue;
   width: 30%;
-  height: 100%;
-}
-
-.company__logo {
- width: 100%;
+  max-height: 200px;
+  border-right: 2px dotted hsla(0, 2%, 31%, 0.199);
 }
 
 .company__info-text--wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid blue;
   width: 70%;
-  height: 100%;
+}
+
+.company__logo {
+  max-width: 80%;
+}
+
+.unison {
+  transform: scale(0.75);
 }
