@@ -162,9 +162,10 @@ nav {
 
 .about-me__picture {
   width: 100%;
-  transform: scale(2.8);
+  transform: scale(8) translate(-31.2%, -11%);
   padding-top: 32px;
   padding-left: 30px;
+  z-index: 1;
 }
 
 .about-me__info--title {
@@ -237,6 +238,7 @@ nav {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .language {
