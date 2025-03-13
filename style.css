@@ -120,7 +120,7 @@ nav {
 /* ABOUT ME*/
 
 #about-me {
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
 }
@@ -162,7 +162,7 @@ nav {
 
 .about-me__picture {
   width: 100%;
-  transform: scale(8) translate(-31.2%, -11%);
+  transform: scale(2) translate(-11%, -12%);
   padding-top: 32px;
   padding-left: 30px;
   z-index: 1;
